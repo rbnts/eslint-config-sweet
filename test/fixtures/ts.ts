@@ -8,6 +8,12 @@ if(!false) console.log('sug');
 var a: Array<number> = 1;
 let b =- a
 
+interface yolo {
+  a: string;
+  z(): void;
+  b: number;
+}
+
 async function x(y:string): Promise<number> {
     return 1;
 }

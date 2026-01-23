@@ -1,5 +1,11 @@
 # changelog
 
+## v31.0.0
+
+- add rule `@typescript-eslint/member-ordering`
+- add rule `@typescript-eslint/strict-void-return`
+- add and use `@eslint/config-inspector` as dev dependency
+
 ## v30.0.0
 
 - upgrade `eslint-plugin-unicorn`

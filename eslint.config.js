@@ -251,6 +251,7 @@ export default defineConfig(
       "@typescript-eslint/init-declarations": "error",
       "max-params": "off",
       "@typescript-eslint/max-params": "error",
+      "@typescript-eslint/member-ordering": "error",
       "@typescript-eslint/method-signature-style": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",
       "no-loop-func": "off",
@@ -270,6 +271,7 @@ export default defineConfig(
       "@typescript-eslint/prefer-readonly": "error",
       "@typescript-eslint/promise-function-async": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
+      "@typescript-eslint/strict-void-return": "error",
       "@typescript-eslint/switch-exhaustiveness-check": "error"
     }
   }
