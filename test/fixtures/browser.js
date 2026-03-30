@@ -23,6 +23,6 @@ function y(lol = "eh", a) {
 }
 
 document.body.addEventListener("scroll");
-document.body.innerHTML = "<div>hey</div>";
+document.body.innerHTML = "<div>" + y() + "</div>";
 
 y();

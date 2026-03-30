@@ -1,6 +1,6 @@
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
-import github from "eslint-plugin-github";
+import noUnsanitized from "eslint-plugin-no-unsanitized";
 import sonarjs from "eslint-plugin-sonarjs";
 import unicorn from "eslint-plugin-unicorn";
 import { defineConfig } from "eslint/config";
@@ -30,6 +30,7 @@ export default defineConfig(
       js.configs.recommended,
       unicorn.configs.recommended,
       sonarjs.configs.recommended,
+      noUnsanitized.configs.recommended,
       stylistic.configs.customize({
         semi: true,
         quotes: "double",
@@ -37,11 +38,8 @@ export default defineConfig(
         commaDangle: "never"
       })
     ],
-    plugins: {
-      github
-    },
     rules: {
-      // possible problems
+      // https://eslint.org/docs/latest/rules/#possible-problems
       "array-callback-return": "error",
       "no-await-in-loop": "error",
       "no-constructor-return": "error",
@@ -57,7 +55,7 @@ export default defineConfig(
       "no-useless-assignment": "error",
       "require-atomic-updates": "error",
 
-      // suggestions
+      // https://eslint.org/docs/latest/rules/#suggestions
       "accessor-pairs": "error",
       "arrow-body-style": "error",
       "block-scoped-var": "error",
@@ -160,22 +158,6 @@ export default defineConfig(
       "symbol-description": "error",
       "yoda": "error",
 
-      // github
-      "github/array-foreach": "error",
-      "github/async-currenttarget": "error",
-      "github/async-preventdefault": "error",
-      "github/get-attribute": "error",
-      "github/no-blur": "error",
-      "github/no-dynamic-script-tag": "error",
-      "github/no-implicit-buggy-globals": "error",
-      "github/no-inner-html": "error",
-      "github/no-innerText": "error",
-      "github/no-then": "error",
-      "github/no-useless-passive": "error",
-      "github/prefer-observers": "error",
-      "github/require-passive-events": "error",
-      "github/unescaped-html-literal": "error",
-
       // stylistic
       "@stylistic/array-element-newline": [
         "error",
@@ -265,6 +247,8 @@ export default defineConfig(
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/no-useless-empty-export": "error",
       "@typescript-eslint/no-unsafe-type-assertion": "error",
+      "no-unused-private-class-members": "off",
+      "@typescript-eslint/no-unused-private-class-members": "error",
       "prefer-destructuring": "off",
       "@typescript-eslint/prefer-destructuring": "error",
       "@typescript-eslint/prefer-enum-initializers": "error",

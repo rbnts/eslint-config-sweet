@@ -1,5 +1,16 @@
 # changelog
 
+## v32.0.0
+
+- clean up readme
+- upgrade peer deps to `eslint@10`
+- upgrade peer deps to `typescript@6`
+- drop `eslint-plugin-github`
+- upgrade `eslint-plugin-unicorn`
+- upgrade `eslint-plugin-sonarjs`
+- add rule `@typescript-eslint/no-unused-private-class-members`
+- add `eslint-plugin-no-unsanitized`
+
 ## v31.0.0
 
 - add rule `@typescript-eslint/member-ordering`

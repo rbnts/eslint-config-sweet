@@ -1,17 +1,11 @@
 {
   "name": "eslint-config-sweet",
-  "version": "31.0.0",
+  "version": "32.0.0",
   "description": "ESLint shareable config for the most sweet-ass JavaScript and TypeScript. 🤙🏼",
   "keywords": [
-    "eslint",
     "eslint-config"
   ],
-  "homepage": "https://github.com/robinloeffel/eslint-config-sweet",
-  "bugs": "https://github.com/robinloeffel/eslint-config-sweet/issues",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robinloeffel/eslint-config-sweet.git"
-  },
+  "repository": "https://github.com/robinloeffel/eslint-config-sweet",
   "license": "MIT",
   "author": "Robin Löffel",
   "type": "module",
@@ -19,32 +13,29 @@
   "types": "eslint.config.d.ts",
   "files": [
     "eslint.config.js",
-    "eslint.config.d.ts",
-    "license.txt",
-    "readme.md",
-    "changelog.md"
+    "eslint.config.d.ts"
   ],
   "scripts": {
     "check": "eslint-config-inspector",
     "start": "vitest"
   },
   "dependencies": {
-    "@eslint/js": "^9.39.2",
-    "@stylistic/eslint-plugin": "^5.7.1",
-    "eslint-plugin-github": "^6.0.0",
-    "eslint-plugin-sonarjs": "^3.0.5",
-    "eslint-plugin-unicorn": "^62.0.0",
-    "typescript-eslint": "^8.53.1"
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-plugin-no-unsanitized": "^4.1.5",
+    "eslint-plugin-sonarjs": "^4.0.2",
+    "eslint-plugin-unicorn": "^64.0.0",
+    "typescript-eslint": "^8.58.0"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^1.4.2",
-    "eslint": "^9.39.2",
-    "robins-tsconfig": "^2.0.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "@eslint/config-inspector": "1.5.0",
+    "eslint": "10.1.0",
+    "robins-tsconfig": "5.0.0",
+    "typescript": "6.0.2",
+    "vitest": "4.1.2"
   },
   "peerDependencies": {
-    "eslint": "^9.39.2",
-    "typescript": "^5.9.3"
+    "eslint": ">=10",
+    "typescript": ">=6"
   }
 }

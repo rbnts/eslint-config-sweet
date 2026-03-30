@@ -19,8 +19,8 @@ describe("browser", async () => {
     expect(findMessage(results, "no-unused-vars")).toBeDefined();
   });
 
-  test("finds: github/no-inner-html", () => {
-    expect(findMessage(results, "github/no-inner-html")).toBeDefined();
+  test("finds: no-unsanitized/property", () => {
+    expect(findMessage(results, "no-unsanitized/property")).toBeDefined();
   });
 });
 

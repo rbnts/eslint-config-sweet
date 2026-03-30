@@ -1,3 +1,3 @@
-import type { defineConfig } from "eslint/config";
-declare const sweet: ReturnType<typeof defineConfig>;
+import type { Config } from "eslint/config";
+declare const sweet: Config[];
 export default sweet;
