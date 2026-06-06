@@ -1,5 +1,11 @@
 # changelog
 
+## v33.0.0
+
+- update readme badges
+- fix up package.json
+- add `@e18e/eslint-plugin`
+
 ## v32.0.0
 
 - clean up readme

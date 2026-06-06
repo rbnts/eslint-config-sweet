@@ -20,6 +20,7 @@ async function x(y:string): Promise<number> {
 
 x('', 5).then(() => {});
 
+let yo = [...new Set(1,2,3)].map(i => i+7)
 
 
 'hello'.lastIndexOf("e");

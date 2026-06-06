@@ -1,3 +1,4 @@
+import e18e from "@e18e/eslint-plugin";
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import noUnsanitized from "eslint-plugin-no-unsanitized";
@@ -8,7 +9,11 @@ import ts from "typescript-eslint";
 
 export default defineConfig(
   {
-    name: "global ignores",
+    name: "globals",
+    linterOptions: {
+      reportUnusedDisableDirectives: "error",
+      reportUnusedInlineConfigs: "error"
+    },
     ignores: [
       "**/dist/",
       "**/build/",
@@ -18,26 +23,7 @@ export default defineConfig(
     ]
   },
   {
-    name: "global options",
-    linterOptions: {
-      reportUnusedDisableDirectives: "error",
-      reportUnusedInlineConfigs: "error"
-    }
-  },
-  {
     name: "vanilla",
-    extends: [
-      js.configs.recommended,
-      unicorn.configs.recommended,
-      sonarjs.configs.recommended,
-      noUnsanitized.configs.recommended,
-      stylistic.configs.customize({
-        semi: true,
-        quotes: "double",
-        braceStyle: "1tbs",
-        commaDangle: "never"
-      })
-    ],
     rules: {
       // https://eslint.org/docs/latest/rules/#possible-problems
       "array-callback-return": "error",
@@ -156,9 +142,25 @@ export default defineConfig(
       "prefer-template": "error",
       "require-await": "error",
       "symbol-description": "error",
-      "yoda": "error",
-
-      // stylistic
+      "yoda": "error"
+    }
+  },
+  {
+    name: "plugins",
+    extends: [
+      js.configs.recommended,
+      unicorn.configs.recommended,
+      sonarjs.configs.recommended,
+      noUnsanitized.configs.recommended,
+      e18e.configs.recommended,
+      stylistic.configs.customize({
+        semi: true,
+        quotes: "double",
+        braceStyle: "1tbs",
+        commaDangle: "never"
+      })
+    ],
+    rules: {
       "@stylistic/array-element-newline": [
         "error",
         "consistent"
@@ -178,13 +180,11 @@ export default defineConfig(
       "@stylistic/semi-style": "error",
       "@stylistic/switch-colon-spacing": "error",
 
-      // unicorn
       "unicorn/better-regex": "error",
       "unicorn/consistent-destructuring": "error",
       "unicorn/no-named-default": "off",
       "unicorn/no-null": "off",
 
-      // sonarjs
       "sonarjs/no-collapsible-if": "error",
       "sonarjs/prefer-immediate-return": "error",
       "sonarjs/shorthand-property-grouping": "error"

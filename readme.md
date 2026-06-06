@@ -1,9 +1,9 @@
 # eslint-config-sweet
 
-[![latest version](https://badgen.net/npm/v/eslint-config-sweet)](https://npmx.dev/package/eslint-config-sweet)
-[![npm downloads a week](https://badgen.net/npm/dw/eslint-config-sweet)](https://npmx.dev/package/eslint-config-sweet)
-[![typescript types](https://badgen.net/npm/types/eslint-config-sweet)](./eslint.config.d.ts)
-[![package license](https://badgen.net/npm/license/eslint-config-sweet)](https://choosealicense.com/licenses/mit/)
+[![latest version](https://npmx.dev/api/registry/badge/version/eslint-config-sweet)](https://npmx.dev/eslint-config-sweet)
+[![npm downloads](https://npmx.dev/api/registry/badge/downloads/eslint-config-sweet)](https://npmx.dev/eslint-config-sweet)
+[![typescript types](https://npmx.dev/api/registry/badge/types/eslint-config-sweet)](https://npmx.dev/eslint-config-sweet)
+[![license](https://npmx.dev/api/registry/badge/license/eslint-config-sweet)](https://npmx.dev/eslint-config-sweet)
 
 > ESLint [shareable config](https://eslint.org/docs/developer-guide/shareable-configs.html) for the most sweet-ass JavaScript and TypeScript. 🤙🏼
 
@@ -40,4 +40,4 @@ Sweet, man. That's the point. On a more serious note though: It mostly, enforces
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://opensource.org/license/MIT)
